@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - BELTO WORLD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="home-page">
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="planet_-_72540 (Original).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+  <div class="dropdown-menu" id="dropdownMenu">
+      <div class="nav-spacing"></div>
+    <a href="index.html" class="nav-button"><i class="fas fa-home icon-space"></i><span class="gold">H</span>OME</a>
+    <a href="products.html" class="nav-button"><i class="fas fa-box icon-space"></i><span class="gold">P</span>RODUCTS</a>
+    <a href="team.html" class="nav-button"><i class="fas fa-users icon-space"></i><span class="gold">T</span>EAM</a>
+    <a href="contact.html" class="nav-button"><i class="fas fa-envelope icon-space"></i><span class="gold">C</span>ONTACT</a>
+      <a href="cart.html" class="nav-button cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span><span class="gold">S</span>HOPPING <span class="gold">C</span>ART</span>
+      </a>
+      <div class="menu-spacing"></div>
+      <a href="signin.html" class="nav-button sign-in">
+          <i class="fas fa-sign-in-alt"></i>
+          <span class="gold">SIGN IN</span>
+      </a>
+      <div class="menu-logo">
+          <img src="BELTO LOGO FINAL.png" alt="BELTO Logo">
+      </div>
+  </div>
+  <div id="mainContent" class="content">
+      <div class="centered">
+          <h1><span class="gold">S</span>hopping <span class="gold">C</span>art</span></h1>
+          <div id="cart-items" class="cart-items">
+              <!-- Cart items will be dynamically inserted here -->
+          </div>
+          <div class="cart-total">
+              <strong>Total: $<span id="cart-total"></span></strong>
+          </div>
+      </div>
+  </div>
+  <div class="copyright">
+      <span class="gold">&copy;</span>Copyright <span class="gold">2</span>023 <span class="gold">B</span>elto <span class="gold">W</span>orld. <span class="gold">A</span>ll <span class="gold">R</span>ights <span class="gold">R</span>eserved.
+  </div>
+  <div class="button-container">
+    <div id="buy-now-button" class="slide-button">
+        <div id="slide-ball" class="slide-ball" draggable="true"></div>
+        Buy Now
+    </div>
+    <button id="checkout-button">Checkout</button>
+  </div>
+  <script>
+      document.getElementById('buy-now-button').addEventListener('click', () => {
+          alert('Buy Now functionality has to be implemented.');
+      });
+
+      document.getElementById('checkout-button').addEventListener('click', () => {
+          alert('Checkout functionality has to be implemented.');
+      });
+  </script>
+
+    <script src="cart.js"></script>
+</body>
+</html>

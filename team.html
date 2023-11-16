@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - BELTO WORLD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <video autoplay loop muted playsinline id="bg-video">
+      <source src="planet_-_72540 (Original).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+  <div class="dropdown-menu" id="dropdownMenu">
+      <div class="nav-spacing"></div>
+    <a href="index.html" class="nav-button"><i class="fas fa-home icon-space"></i><span class="gold">H</span>OME</a>
+    <a href="products.html" class="nav-button"><i class="fas fa-box icon-space"></i><span class="gold">P</span>RODUCTS</a>
+    <a href="team.html" class="nav-button"><i class="fas fa-users icon-space"></i><span class="gold">T</span>EAM</a>
+    <a href="contact.html" class="nav-button"><i class="fas fa-envelope icon-space"></i><span class="gold">C</span>ONTACT</a>
+      <a href="cart.html" class="nav-button cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span><span class="gold">S</span>HOPPING <span class="gold">C</span>ART</span>
+      </a>
+      <div class="menu-spacing"></div>
+      <a href="signin.html" class="nav-button sign-in">
+          <i class="fas fa-sign-in-alt"></i>
+          <span class="gold">SIGN IN</span>
+      </a>
+      <div class="menu-logo">
+          <img src="BELTO LOGO FINAL.png" alt="BELTO Logo">
+      </div>
+  </div>
+    <div class="content"> 
+      <div id="mainContent" class="content fade-in">
+        <div class="centered">
+            <h1>Our <span class="gold">B</span>elto Team</h1>
+            <p>Meet our talented team members.</p>
+        </div>
+        <div class="product-boxes">
+            <!-- Team Members -->
+          <div class="product-box" onmouseover="showBio('bioEmil')" onmouseout="hideBio('bioEmil')">
+              <a href="https://www.linkedin.com/feed/" target="_blank">
+                  <p class="ceo-title"><span class="gold">CEO & Founder</span></p>
+                  <p class="product-name">Emil Shirokikh</p>
+                  <img src="BELTO PIMP.jpg" alt="Emil Shirokikh" class="team-member-photo">
+              </a>
+              <div id="bioEmil" class="bio-content" style="display: none;">
+                  <p>Here is Emil's bio... [Add Emil's biography or other information here]</p>
+              </div>
+          </div>
+          <div class="product-box" onmouseover="showBio('bioCarlos')" onmouseout="hideBio('bioCarlos')">
+              <a href="https://www.linkedin.com/in/xavier-langer-044b531b7" target="_blank">
+                  <p class="ceo-title"><span class="gold">CEO & Founder</span></p>
+                  <p class="product-name">Carlos Langer</p>
+                  <img src="CarlosPic.jpeg" alt="Carlos Langer" class="team-member-photo">
+              </a>
+              <div id="bioCarlos" class="bio-content" style="display: none;">
+                  <p>Here is Carlos's bio... [Add Carlos's biography or other information here]</p>
+              </div>
+          </div>
+
+          <div class="product-box" onmouseover="showBio('bioPhilipp')" onmouseout="hideBio('bioPhilipp')">
+              <a href="profile-url-of-philipp.html" target="_blank">
+                  <p class="ceo-title"><span class="gold">Head of the Belto Fund</span></p>
+                  <p class="product-name">Philipp Barthelmae</p>
+                  <img src="BELTO LOGO FINAL.png" alt="Philipp Barthelmae" class="team-member-photo">
+              </a>
+              <div id="bioPhilipp" class="bio-content" style="display: none;">
+                  <p>Philipp's bio...</p>
+              </div>
+          </div>
+
+          <div class="product-box" onmouseover="showBio('bioAlanS')" onmouseout="hideBio('bioAlanS')">
+              <a href="profile-url-of-alan.html" target="_blank">
+                  <p class="ceo-title"><span class="gold">Head of Stocks</span></p>
+                  <p class="product-name">Alan Segreto</p>
+                  <img src="BELTO LOGO FINAL.png" alt="Alan Segreto" class="team-member-photo">
+              </a>
+              <div id="bioAlanS" class="bio-content" style="display: none;">
+                  <p>Alan Segreto's bio...</p>
+              </div>
+          </div>
+
+          <div class="product-box" onmouseover="showBio('bioAlanC')" onmouseout="hideBio('bioAlanC')">
+              <a href="profile-url-of-alan-c.html" target="_blank">
+                  <p class="ceo-title"><span class="gold">Head of Marketing</span></p>
+                  <p class="product-name">Alan Cortez</p>
+                  <img src="BELTO LOGO FINAL.png" alt="Alan Cortez" class="team-member-photo">
+              </a>
+              <div id="bioAlanC" class="bio-content" style="display: none;">
+                  <p>Alan Cortez's bio...</p>
+              </div>
+          </div>
+
+          <div class="product-box" onmouseover="showBio('bioGhazal')" onmouseout="hideBio('bioGhazal')">
+              <a href="profile-url-of-ghazal.html" target="_blank">
+                  <p class="ceo-title"><span class="gold">Head of Development</span></p>
+                  <p class="product-name">Ghazal ASKHER</p>
+                  <img src="BELTO LOGO FINAL.png" alt="Ghazal ASKHER" class="team-member-photo">
+              </a>
+              <div id="bioGhazal" class="bio-content" style="display: none;">
+                  <p>Ghazal ASKHER's bio...</p>
+              </div>
+          </div>
+
+          <div class="product-box" onmouseover="showBio('bioShan')" onmouseout="hideBio('bioShan')">
+              <a href="profile-url-of-shan.html" target="_blank">
+                  <p class="ceo-title"><span class="gold">AI Developer</span></p>
+                  <p class="product-name">Shan Ramasubramanian</p>
+                  <img src="BELTO LOGO FINAL.png" alt="Shan Ramasubramanian" class="team-member-photo">
+              </a>
+              <div id="bioShan" class="bio-content" style="display: none;">
+                  <p>Shan Ramasubramanian's bio...</p>
+              </div>
+          </div>
+
+          <div class="product-box" onmouseover="showBio('bioInnayat')" onmouseout="hideBio('bioInnayat')">
+              <a href="profile-url-of-innayat.html" target="_blank">
+                  <p class="ceo-title"><span class="gold">Marketing Member</span></p>
+                  <p class="product-name">Innayat ASKHER</p>
+                  <img src="BELTO LOGO FINAL.png" alt="Innayat ASKHER" class="team-member-photo">
+              </a>
+              <div id="bioInnayat" class="bio-content" style="display: none;">
+                  <p>Innayat ASKHER's bio...</p>
+              </div>
+          </div>
+
+          <div class="product-box" onmouseover="showBio('bioMichael')" onmouseout="hideBio('bioMichael')">
+              <a href="profile-url-of-michael.html" target="_blank">
+                  <p class="ceo-title"><span class="gold">Backend Developer</span></p>
+                  <p class="product-name">Michael Johnson</p>
+                  <img src="BELTO LOGO FINAL.png" alt="Michael Johnson" class="team-member-photo">
+              </a>
+              <div id="bioMichael" class="bio-content" style="display: none;">
+                  <p>Michael Johnson's bio...</p>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+        <span class="gold">&copy;</span>Copyright <span class="gold">2</span>023 <span class="gold">B</span>elto <span class="gold">W</span>orld. <span class="gold">A</span>ll <span class="gold">R</span>ights <span class="gold">R</span>eserved.
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
